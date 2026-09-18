@@ -1,0 +1,18 @@
+{
+  "name": "android-login",
+  "user": "ubuntu",
+  "install": "cd /agent/repos/android-login && bash .cursor/install.sh",
+  "start": "cd /agent/repos/android-login && bash .cursor/start.sh",
+  "terminals": [
+    {
+      "name": "php-api",
+      "command": "cd /agent/repos/android-login/HTTPLogin && php -S 0.0.0.0:8000 index.php"
+    }
+  ],
+  "ports": [
+    {
+      "name": "HTTPLogin API",
+      "port": 8000
+    }
+  ]
+}
